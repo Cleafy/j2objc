@@ -95,9 +95,4 @@ public class IosX509Certificate extends X509CertImpl {
     }
     // It's valid!
   ]-*/;
-
-  @Override
-  protected native void finalize() throws Throwable /*-[
-    CFRelease((SecCertificateRef) secCertificateRef_);
-  ]-*/;
 }
